@@ -1,0 +1,6 @@
+# Send_SMS.py
+pip install twilio
+
+# Recieve_SMS.py
+pip install flask
+ngrok (only for demo won't need when we actually host website)
