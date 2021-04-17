@@ -1,0 +1,11 @@
+pip install requests
+pip install pandas
+
+# main.py uses the Geocode and places API to take a string input address ('"1600 Amphitheatre Parkway, Mountain View, CA"')
+  and store nearby pharmacies in variables name(1-3) and vicinity(1-3)(the address of location).
+
+pip install phonenumbers
+pip install opencage
+# main.py uses phonenumbers module to track location off of areacode and opencage returns latitutde and longitutde values that can be
+fed into the second part of main.py. But I don't think this is great because areacode is totally accurate if you have the areacode
+of a different state and the latitude and longitude numbers are based off state instead of specific location.
