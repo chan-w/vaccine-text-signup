@@ -5,10 +5,10 @@ import requests
 from urllib.parse import urlencode
 
 def extract_lat_lng(address_or_postalcode, data_type = 'json'):
-    endpoint = f"https://maps.googleapis.com/maps/api/geocode/{data_type}"
+    endpoint = "https://maps.googleapis.com/maps/api/geocode/{}".format(data_type) #f"https://maps.googleapis.com/maps/api/geocode/{data_type}"
     params = {"address": address_or_postalcode, "key": api_key}
     url_params = urlencode(params)
-    url = f"{endpoint}?{url_params}"
+    url = "{}?{}".format(endpoint, url_params) #f"{endpoint}?{url_params}"
     r = requests.get(url)
     if r.status_code not in range(200, 299):
         return {}
@@ -27,12 +27,12 @@ def get_nearest_pharmacies(address, number_results=3):
     places_endpoint_2 = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
     params_2 = {
         "key": api_key,
-        "location": f"{lat},{lng}",
+        "location": "{},{}".format(lat, lng), #f"{lat},{lng}",
         "radius": "1500",
         "keyword": "pharmacy"
     }
     params_2_encoded = urlencode(params_2)
-    places_url=f"{places_endpoint_2}?{params_2_encoded}"
+    places_url="{places_endpoint_2}?{params_2_encoded}".format(places_endpoint_2, params_2_encoded)#f"{places_endpoint_2}?{params_2_encoded}"
 
     r2 = requests.get(places_url)
 

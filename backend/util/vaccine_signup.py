@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import pandas as pd
 
-def send_to_signup(responses, url="http://localhost:3000/", headless=True):
+def send_to_signup(responses, url="https://cvsform-1abdd.web.app/", headless=True):
     """
     Send data in responses to the form at url
     Disable headless to show browser 
