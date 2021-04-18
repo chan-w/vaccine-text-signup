@@ -7,7 +7,7 @@
 
 ```source venv/bin/activate```
 
-3. Install requirements
+3. Install requirements (also need selenium and firefox)
 
 ```pip install -r requirements.txt```
 
