@@ -7,9 +7,12 @@
 
 ```source venv/bin/activate```
 
-3. Install requirements (also need selenium and firefox)
+3. Install requirements 
 
 ```pip install -r requirements.txt```
+
+- Also need to install Firefox and GeckoDriver
+https://selenium-python.readthedocs.io/installation.html#downloading-python-bindings-for-selenium
 
 4. Run server
 ```

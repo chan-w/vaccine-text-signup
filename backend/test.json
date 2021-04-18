@@ -1,0 +1,17 @@
+{
+    "phone_number": "1234561234",
+    "positive_test": "No",
+    "contact": "No",
+    "symptoms": "No",
+    "signup_type": 1,
+    "age": 20,
+    "vaccine_site": "CVS",
+    "teacher": "No",
+    "vaccine_date": "today",
+    "name": "John Doe",
+    "birth_date": "1/2/2001",
+    "gender": "Male",
+    "address": "456 Street Drive",
+    "email": "N/A",
+    "coverage": "none"
+}
