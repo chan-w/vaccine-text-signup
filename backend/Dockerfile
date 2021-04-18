@@ -13,7 +13,7 @@ RUN apt-get install -y firefox
 RUN apt-get install -y python3
 LABEL python_version=python3
 #RUN virtualenv --no-download /env -p python
-# RUN python3.8 -m venv env
+RUN python3 -m venv env
 ENV VIRTUAL_ENV /env
 ENV PATH /env/bin:$PATH
 ADD requirements.txt /app/
