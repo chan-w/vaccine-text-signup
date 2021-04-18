@@ -1,4 +1,5 @@
-FROM gcr.io/google-appengine/python
+# FROM gcr.io/google-appengine/python
+FROM gcr.io/google-appengine/python@sha256:fc9d9f429bf75b8369f7894b7eb24098418050557b889f4b02aa4c93fdb5e161
 RUN apt-get update
 # RUN apt-get install -y xvfb
 RUN apt-get install -y firefox
